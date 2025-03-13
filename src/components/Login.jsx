@@ -4,10 +4,11 @@ import DaysiBtn from "./DaysiBtn";
 
 function Login() {
   return (
-    <>
+    <div className="bg-gray-200 w-120 h-170 pt-5 rounded-r-2xl">
       <FormLogin />
+      <p className="text-center">--------------or--------------</p>
       <DaysiBtn />
-    </>
+    </div>
   );
 }
 

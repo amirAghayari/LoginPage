@@ -1,6 +1,6 @@
 function DaysiBtn() {
   return (
-    <div className="flex flex-col gap-2 items-center mt-6">
+    <div className="flex flex-col gap-2 items-center mt-4">
       {/* Email */}
       <button className="btn !bg-white w-100 text-black border-[#e5e5e5]">
         <svg
