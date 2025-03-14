@@ -12,7 +12,7 @@ function FormLogin() {
   const { state, dispatch } = useContext(FormContext);
 
   const onSubmit = (data) => {
-    // ذخیره داده‌ها در ردیوسر
+    // save data in reducer
     dispatch({
       type: "UPDATE_FORM",
       payload: { field: "name", value: data.name },
@@ -26,7 +26,7 @@ function FormLogin() {
       payload: { field: "password", value: data.password },
     });
 
-    console.log("Form Data in Reducer:", state); // نمایش داده‌های ذخیره‌شده در ردیوسر
+    console.log("Form Data in Reducer:", state);
   };
 
   return (

@@ -1,17 +1,16 @@
 import React, { createContext, useReducer } from "react";
-import { formReducer } from "./formReducer"; // مطمئن شوید نام فایل درست است
+import { formReducer } from "./formReducer";
 
-// حالت اولیه برای فرم
+// initialState for form
 const initialState = {
   name: "",
   email: "",
   password: "",
 };
 
-// ایجاد Context
+// create Context
 export const FormContext = createContext();
 
-// ایجاد Provider
 export const FormProvider = ({ children }) => {
   const [state, dispatch] = useReducer(formReducer, initialState);
 
